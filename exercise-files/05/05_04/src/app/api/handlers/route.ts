@@ -20,6 +20,7 @@ export async function POST(request: Request) {
 
   try {
     // SQL query to insert a new post
+    const post = await sql`INSERT posts Values(id: )`
   } catch (error) {
     return NextResponse.json({ error }, { status: 500 });
   }
